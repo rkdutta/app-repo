@@ -15,5 +15,5 @@ configMapGenerator:
   options:
     disableNameSuffixHash: true
 
-patchesStrategicMerge:
-- patch-helmrelease.yaml
+# patchesStrategicMerge:
+# - patch-helmrelease.yaml
