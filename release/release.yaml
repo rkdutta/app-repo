@@ -6,7 +6,7 @@ spec:
   interval: 10m
   releaseName: project-vp
   serviceAccountName: flux-reconciler
-  targetnamespace: placeholder
+  targetNamespace: placeholder
   chart:
     spec:
       chart: podinfo

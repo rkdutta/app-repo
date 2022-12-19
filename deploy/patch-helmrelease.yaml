@@ -5,4 +5,4 @@ metadata:
 spec:
   releaseName: project-vp-dev
   serviceAccountName: flux-reconciler-dev
-  targetnamespace: ccs-vp-dev
+  targetNamespace: ccs-vp-dev
