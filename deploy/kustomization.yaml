@@ -15,13 +15,13 @@ configMapGenerator:
   options:
     disableNameSuffixHash: true
 
-# patches:
-#   - |-
-#     apiVersion: helm.toolkit.fluxcd.io/v2beta1
-#     kind: HelmRelease
-#     metadata:
-#       name: project-vp
-#     spec:
-#       releaseName: project-vp-dev
-#       serviceAccountName: flux-reconciler-dev
-#       targetnamespace: ccs-vp-dev
+patches:
+  - |-
+    apiVersion: helm.toolkit.fluxcd.io/v2beta1
+    kind: HelmRelease
+    metadata:
+      name: project-vp
+    spec:
+      releaseName: project-vp-dev
+      serviceAccountName: flux-reconciler-dev
+      targetnamespace: ccs-vp-dev
