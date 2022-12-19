@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: project-vp
+spec:
+  interval: 10m
+  releaseName: project-vp
+  serviceAccountName: flux-reconciler
+  targetnamespace: placeholder
+  chart:
+    spec:
+      chart: podinfo
+      version: 6.2.3
+      sourceRef:
+        kind: HelmRepository
+        name: app-charts
+      valuesFrom:
+      - kind: ConfigMap
+        name: vp-config-default
