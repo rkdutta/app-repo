@@ -6,12 +6,12 @@ resources:
 
 namespace: default
 
-configMapGenerator:
-- name: vp-config-default
-  files:
-  - values.yaml
-  options:
-    disableNameSuffixHash: true
+# configMapGenerator:
+# - name: vp-config-default
+#   files:
+#   - values.yaml
+#   options:
+#     disableNameSuffixHash: true
 
 # patchesStrategicMerge:
 # - patch-helmrelease.yaml
