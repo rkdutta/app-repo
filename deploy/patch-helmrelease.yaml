@@ -5,4 +5,4 @@ metadata:
 spec:
   releaseName: podinfo
   serviceAccountName: flux-reconciler
-  targetNamespace: dev
+  targetNamespace: default
