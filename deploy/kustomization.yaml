@@ -5,6 +5,7 @@ resources:
 - helmrepo.yaml
 - ./../release/
 
+nameSuffix: "-dev"
 namespace: default
 
 configMapGenerator:
