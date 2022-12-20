@@ -5,7 +5,7 @@ resources:
 - helmrepo.yaml
 - ./../release/
 
-namespace: flux-system
+namespace: default
 
 configMapGenerator:
 - name: vp-config-default
