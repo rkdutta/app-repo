@@ -16,3 +16,6 @@ configMapGenerator:
 
 patchesStrategicMerge:
 - patch-helmrelease.yaml
+
+configurations:
+  - kustomizeconfig.yaml
