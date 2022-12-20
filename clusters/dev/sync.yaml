@@ -8,7 +8,7 @@ spec:
   interval: 5m0s
   path: ./deploy
   prune: true
-  serviceAccountName: flux-reconciler
+  serviceAccountName: kustomize-controller
   sourceRef:
     kind: GitRepository
     name: flux-system
