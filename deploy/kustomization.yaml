@@ -12,7 +12,7 @@ configMapGenerator:
   files:
   - values.yaml
   options:
-    disableNameSuffixHash: false
+    disableNameSuffixHash: true
 
 patchesStrategicMerge:
 - patch-helmrelease.yaml
