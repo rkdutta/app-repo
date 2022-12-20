@@ -8,7 +8,7 @@ resources:
 namespace: default
 
 configMapGenerator:
-- name: vp-config-default
+- name: config-default
   files:
   - values.yaml
   options:
