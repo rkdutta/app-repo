@@ -4,5 +4,5 @@ metadata:
   name: project-vp
 spec:
   releaseName: project-vp-dev
-  serviceAccountName: flux-reconciler-dev
-  targetNamespace: ccs-vp-dev
+  serviceAccountName: flux-reconciler
+  targetNamespace: default
