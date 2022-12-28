@@ -18,4 +18,4 @@ spec:
   - kind: ConfigMap
     name: config-default
   - kind: ConfigMap
-    name: example-cm
+    name: config-specific
