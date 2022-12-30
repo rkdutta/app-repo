@@ -1,5 +1,8 @@
 # Default values for podinfo.
 
+aaaa:
+  fromDefault: 1
+  
 replicaCount: 1
 logLevel: info
 host: #0.0.0.0
