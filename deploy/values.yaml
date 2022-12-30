@@ -13,7 +13,8 @@ image:
 
 ui:
   color: "#34577c"
-  message: "UPDATED-DEFAULT"
+  message: "UPDATED-DEFAULT-v1"
+  defaultMessage: "UPDATED-DEFAULT-v1"
   logo: ""
 
 # failure conditions
