@@ -1,8 +1,7 @@
 global:
     imagePullSecrets:
-      - name: acr-regcred
+      - name: default-regcred
         imageRegistry: ccscicd.azurecr.io
-        
 foo: "bar"
 meta:
   from: dev
