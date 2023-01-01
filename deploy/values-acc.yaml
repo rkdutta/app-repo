@@ -1,0 +1,12 @@
+foo: "acc"
+meta:
+  to: acc
+  tesing: acc
+global:
+  imagePullSecrets:
+  - imageRegistry: ccscicd.azurecr.io
+    name: default-regcred
+db-configurator:
+  enabled: false
+  configMapEnvRefs:
+  - name: endpoint-db-wm
