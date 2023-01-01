@@ -5,6 +5,7 @@ global:
         
 foo: "bar"
 meta:
+  from: dev
   entry: default
   env: default
 
