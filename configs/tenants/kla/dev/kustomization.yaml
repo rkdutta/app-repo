@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../../defaults/
+
+namespace: dev
+
+configMapGenerator:
+- name: config-default
+  behavior: merge
+  files:
+  - values.yaml
+  options:
+    disableNameSuffixHash: true
