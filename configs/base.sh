@@ -55,6 +55,8 @@ rm -f kustomization.yaml
 kustomize init
 kustomize edit add resource "../../../base"
 
+kustomize edit set namespace $tenant-$environment
+
 for dir in */ ; do
     echo "Processing in $dir"
 
