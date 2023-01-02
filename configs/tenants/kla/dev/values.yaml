@@ -7,5 +7,5 @@ data:
   DB_ATTACHMENT_SERV: XE
 kind: ConfigMap
 metadata:
-  name: endpoint-db-attachment
+  name: endpoint-db-attachment-additional
   namespace: ccs-vp-dev
