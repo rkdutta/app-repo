@@ -5,11 +5,11 @@ resources:
 
 namespace: dev
 
-configMapGenerator:
-- name: endpoint-db-attachment
-  namespace: default
-  behavior: merge
-  files:
-  - values.yaml
-  options:
-    disableNameSuffixHash: true
+# configMapGenerator:
+# - name: endpoint-db-attachment
+#   namespace: default
+#   behavior: merge
+#   files:
+#   - values.yaml
+#   options:
+#     disableNameSuffixHash: true
