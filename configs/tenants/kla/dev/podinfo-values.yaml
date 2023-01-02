@@ -1,7 +1,3 @@
 # Default values for podinfo.
 aaaa:
   fromDev: 2
-kind: ConfigMap
-metadata:
-  name: podinfo-config-5cm9ckb74d
-  namespace: dev
