@@ -34,5 +34,22 @@ do
     kustomize edit add configmap $fileNameWithOutPathAndExtn --behavior=create --from-file=$fileNameWithOutPath
 done
 
+
+
 cd ../tenants/$tenant/$environment
+rm -f kustomization.yaml
+kustomize init 
+echo
+echo
 pwd
+for file in *; 
+do 
+    echo "Processing $file file..."
+    
+    fileNameWithOutPath=`basename $file`
+    fileNameExtn=${fileNameWithOutPath##*.}
+    fileNameWithOutPathAndExtn=`basename $file .$fileNameExtn`
+
+    file=$file yq ea '. *= load(env(file))' "$basePath/$fileNameWithOutPath" > tenants/$tenant/merged-$environment/$fileNameWithOutPath
+    kustomize edit add configmap $fileNameWithOutPathAndExtn --behavior=merge --from-file=$fileNameWithOutPath
+done

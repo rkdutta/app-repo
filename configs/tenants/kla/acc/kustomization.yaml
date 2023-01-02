@@ -7,11 +7,11 @@ configMapGenerator:
   name: applications-config
 - behavior: merge
   files:
-  - endpoint-db-attachment.properties
+  - endpoint-db-attachment.yaml
   name: endpoint-db-attachment
 - behavior: merge
   files:
-  - endpoint-db-cache.properties
+  - endpoint-db-cache.yaml
   name: endpoint-db-cache
 - behavior: merge
   files:
