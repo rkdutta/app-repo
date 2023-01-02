@@ -24,7 +24,7 @@ metadata:
   namespace: default
 spec:
   interval: 5m0s
-  path: ./configs/defaults
+  path: ./configs/tenants/kla/dev
   prune: true
   serviceAccountName: flux-reconciler
   sourceRef:
