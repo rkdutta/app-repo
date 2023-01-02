@@ -1,0 +1,6 @@
+#tenant should override all values because this is a list
+applications:
+- name: "DIP AutTest - Dynamic Routing (L3P)"
+  version: "1000.0"
+  consumingAPIs:
+    _all: false

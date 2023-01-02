@@ -1,3 +1,4 @@
+# Default values for podinfo.
 aaaa:
   fromDefault: 1
   env: default
@@ -15,6 +16,6 @@ image:
 
 ui:
   color: "#34577c"
-  message: "UPDATED-Default-v1"
+  message: "UPDATED-ACC-v9"
   logo: ""
 

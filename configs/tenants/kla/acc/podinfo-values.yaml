@@ -1,0 +1,13 @@
+aaaa:
+  fromACC: 3
+  env: acc
+
+replicaCount: 1000000
+backends:
+- 1
+- 2
+- 3
+
+ui:
+  message: "UPDATED-ACC-v9"
+
