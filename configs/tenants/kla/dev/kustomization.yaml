@@ -8,7 +8,7 @@ namespace: dev
 configMapGenerator:
 - name: endpoint-db-attachment
   namespace: dev
-  behavior: merge
+  behavior: replace
   files:
   - values.yaml
   options:
