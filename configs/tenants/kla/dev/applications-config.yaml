@@ -1,3 +1,4 @@
+#tenant should override all values because this is a list
 applications:
 - name: "DIP AutTest - Dynamic Routing (L2P)"
   version: "1000.0"

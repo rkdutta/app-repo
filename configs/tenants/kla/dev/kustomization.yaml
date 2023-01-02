@@ -23,3 +23,7 @@ configMapGenerator:
   behavior: merge
   files:
   - applications-config.yaml
+- name: podinfo-config
+  behavior: merge
+  files:
+  - podinfo-values.yaml

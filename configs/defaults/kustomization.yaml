@@ -19,4 +19,8 @@ configMapGenerator:
   behavior: create
   files:
   - applications-config.yaml
+- name: podinfo-config
+  behavior: create
+  files:
+  - podinfo-values.yaml
 
