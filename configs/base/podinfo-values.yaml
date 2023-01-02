@@ -1,7 +1,7 @@
 # Default values for podinfo.
 aaaa:
-  fromDefault: 1
-  env: default
+  fromBase: 1
+  env: base
 
 replicaCount: 1
 logLevel: info
