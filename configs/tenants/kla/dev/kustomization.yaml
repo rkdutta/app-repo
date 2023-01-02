@@ -3,6 +3,9 @@ kind: Kustomization
 resources:
 - ../../../defaults/
 
+generatorOptions:
+  immutable: true
+  
 namespace: dev
 
 configMapGenerator:
