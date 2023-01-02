@@ -1,0 +1,24 @@
+apiVersion: v1
+data:
+  applications-config.yaml: |
+    applications:
+    - name: "DIP AutTest - Dynamic Routing (L2P)"
+      version: "1.0"
+      consumingAPIs:
+        _all: true
+    - name: "DIP AutTest - Dynamic Routing (Scope)"
+      version: "1.0"
+      consumingAPIs:
+        _all: true
+    - name: "DIP AutTest - Dynamic Routing (Simple)"
+      version: "1.0"
+      consumingAPIs:
+        _all: true
+    - name: "DIP AutTest - Node Routing"
+      version: "1.0"
+      consumingAPIs:
+        _all: true
+kind: ConfigMap
+metadata:
+  name: api-gateway-applications-config
+  namespace: ccs-vp-dev
