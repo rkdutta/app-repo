@@ -1,6 +1,22 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: dev
-resources:
-- api-gateway-applications-config.yaml
-- endpoints.yaml
+
+configMapGenerator:
+- name: endpoint-db-attachment
+  behavior: create
+  envs:
+  - endpoint-db-attachment.properties
+- name: endpoint-db-cache
+  behavior: create
+  envs:
+  - endpoint-db-cache.properties
+- name: app-binaries
+  behavior: create
+  files:
+  - test-file-1.tgz
+  - test-file-2.tgz
+- name: applications-config
+  behavior: create
+  files:
+  - applications-config.yaml
+
