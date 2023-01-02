@@ -6,7 +6,7 @@ resources:
 namespace: dev
 
 configMapGenerator:
-- name: config-default
+- name: endpoint-db-attachment
   namespace: default
   behavior: merge
   files:
