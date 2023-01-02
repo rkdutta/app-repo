@@ -15,3 +15,21 @@ spec:
     namespace: flux-system
   validation: client
   targetNamespace: default
+
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: ks-configs
+  namespace: default
+spec:
+  interval: 5m0s
+  path: ./configs/defaults
+  prune: true
+  serviceAccountName: flux-reconciler
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+    namespace: flux-system
+  validation: client
+  targetNamespace: default
