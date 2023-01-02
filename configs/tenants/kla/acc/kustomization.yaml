@@ -1,31 +1,29 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+resources:
+- ../../../base
 configMapGenerator:
 - behavior: merge
-  files:
-  - applications-config.yaml
-  name: applications-config
-- behavior: merge
-  files:
-  - endpoint-db-attachment.yaml
+  envs:
+  - envs/endpoint-db-attachment.properties
   name: endpoint-db-attachment
 - behavior: merge
-  files:
-  - endpoint-db-cache.yaml
+  envs:
+  - envs/endpoint-db-cache.properties
   name: endpoint-db-cache
 - behavior: merge
   files:
-  - kustomization.yaml
-  name: kustomization
+  - files/applications-config.yaml
+  name: applications-config
 - behavior: merge
   files:
-  - podinfo-values.yaml
+  - files/podinfo-values.yaml
   name: podinfo-values
 - behavior: merge
   files:
-  - test-file-1.tgz
+  - files/test-file-1.tgz
   name: test-file-1
 - behavior: merge
   files:
-  - test-file-2.tgz
+  - files/test-file-2.tgz
   name: test-file-2

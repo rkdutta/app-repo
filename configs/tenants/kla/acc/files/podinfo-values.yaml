@@ -8,6 +8,4 @@ backends:
 - 2
 - 3
 
-ui:
-  message: "UPDATED-ACC-v9"
 
