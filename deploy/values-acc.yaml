@@ -9,7 +9,7 @@ db-configurator:
 foo: "bar-acc"
 global:
     imagePullSecrets:
-      - name: default-regcred
+      - name: acc-regcred
         imageRegistry: ccscicd.azurecr.io
 
 meta:
