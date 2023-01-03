@@ -13,6 +13,6 @@ global:
         imageRegistry: ccscicd.azurecr.io
 
 meta:
-  from: dev
-  entry: default
-  env: default
+  from: acc
+  entry: acc
+  env: acc
