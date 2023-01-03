@@ -13,6 +13,8 @@ global:
     imagePullSecrets:
       - name: default-regcred
         imageRegistry: ccscicd.azurecr.io
+      - name: default-regcred
+        imageRegistry: ccscicd.azurecr.io
 
 meta:
   from: default
