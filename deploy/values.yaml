@@ -9,6 +9,7 @@ db-configurator:
     
 foo: "bar"
 global:
+    env: default
     imagePullSecrets:
       - name: default-regcred
         imageRegistry: ccscicd.azurecr.io
@@ -19,4 +20,4 @@ meta:
   env: default
   extra: 
     from: default
-    
+
