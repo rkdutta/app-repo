@@ -14,7 +14,7 @@ configMapGenerator:
     disableNameSuffixHash: false
 - name: config-acc
   files:
-  - values-acc.yaml
+  - values.yaml=values-acc.yaml
   options:
     disableNameSuffixHash: false
 
