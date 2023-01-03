@@ -1,11 +1,5 @@
 db-configurator:
   enabled: false
-  configMapEnvRefs:
-    - name: endpoint-db-wm
-    - name: endpoint-db-wm1
-  secretEnvRefs:
-    - name: credentials-db-wm
-    - name: credentials-db-attachment
     
 foo: "bar"
 global:
