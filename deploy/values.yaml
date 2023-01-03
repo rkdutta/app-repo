@@ -1,13 +1,3 @@
-global:
-    imagePullSecrets:
-      - name: default-regcred
-        imageRegistry: ccscicd.azurecr.io
-foo: "bar"
-meta:
-  from: dev
-  entry: default
-  env: default
-
 db-configurator:
   enabled: true
   configMapEnvRefs:
@@ -15,3 +5,14 @@ db-configurator:
   secretEnvRefs:
     - name: credentials-db-wm
     - name: credentials-db-attachment
+    
+foo: "bar"
+global:
+    imagePullSecrets:
+      - name: default-regcred
+        imageRegistry: ccscicd.azurecr.io
+
+meta:
+  from: dev
+  entry: default
+  env: default
