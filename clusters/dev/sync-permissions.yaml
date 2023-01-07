@@ -6,7 +6,7 @@ metadata:
   namespace: default
 spec:
   interval: 5m0s
-  path: ./platform/permissions
+  path: ./platform/permission
   prune: true
   sourceRef:
     kind: GitRepository
