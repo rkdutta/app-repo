@@ -6,12 +6,5 @@ resources:
 
 namespace: default
 
-configMapGenerator:
-- name: config-default
-  files:
-  - values/values.yaml
-  options:
-    disableNameSuffixHash: false
-
 configurations:
   - kustomizeconfig.yaml
