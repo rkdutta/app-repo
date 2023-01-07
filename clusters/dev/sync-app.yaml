@@ -15,5 +15,5 @@ spec:
     namespace: flux-system
   targetNamespace: default
   dependsOn:
-    name: ks-repositories
+  - name: ks-repositories
     namespace: default

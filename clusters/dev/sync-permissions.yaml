@@ -14,5 +14,5 @@ spec:
     namespace: flux-system
   targetNamespace: default
   dependsOn:
-    name: flux-system
+  - name: flux-system
     namespace: flux-system
