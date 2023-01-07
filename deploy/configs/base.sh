@@ -37,11 +37,11 @@ for dir in */ ; do
         fileNameWithOutPathAndExtn=`basename $file .$fileNameExtn`
    
         if [[ $dir == "envs/" ]]; then
-            kustomize edit add configmap $fileNameWithOutPathAndExtn --behavior=create --from-env-file=$file
+            kustomize edit add configmap $fileNameWithOutPathAndExtn --behavior=create --from-env-file=$file --disableNameSuffixHash
         elif [[ $dir == "files/" ]]; then
-            kustomize edit add configmap $fileNameWithOutPathAndExtn --behavior=create --from-file=$file
+            kustomize edit add configmap $fileNameWithOutPathAndExtn --behavior=create --from-file=$file --disableNameSuffixHash
         elif [[ $dir == "values/" ]]; then
-            kustomize edit add configmap $fileNameWithOutPathAndExtn --behavior=create --from-file=values.yaml=$file
+            kustomize edit add configmap $fileNameWithOutPathAndExtn --behavior=create --from-file=values.yaml=$file --disableNameSuffixHash
         else
             echo "Unsupported directory structure -  $dir"
             exit 1
