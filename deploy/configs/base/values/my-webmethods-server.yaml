@@ -1,0 +1,32 @@
+my-webmethods-server:
+  enabled: true
+  configMapEnvRefs:
+    - name: endpoint-db-wm
+    - name: endpoint-um
+    - name: endpoint-is
+    - name: endpoint-ip-ldap
+  secretEnvRefs:
+    - name: credentials-db-wm
+    - name: credentials-um
+    - name: credentials-is
+    - name: credentials-ip-ldap
+  service:
+    port: 8585
+  ingress:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-production
+      kubernetes.io/ingress.class: nginx
+      kubernetes.io/tls-acme: "true"
+      nginx.ingress.kubernetes.io/whitelist-source-range: "80.95.163.20,149.146.5.85,193.172.150.192/26,91.240.70.5,183.82.112.139,182.73.163.98,34.91.89.124"
+    hosts:
+      - host: mws.kla-dev.dev-1.dip.ccs.nl
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              servicePort: 8585
+    tls:
+      - hosts:
+          - mws.kla-dev.dev-1.dip.ccs.nl
+        secretName: mws-tls

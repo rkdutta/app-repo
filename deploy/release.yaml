@@ -17,3 +17,7 @@ spec:
   valuesFrom:
   - kind: ConfigMap
     name: config-default
+  - kind: ConfigMap
+    name: api-gateway
+  - kind: ConfigMap
+    name: api-gateway

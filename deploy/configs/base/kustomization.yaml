@@ -1,0 +1,139 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+configMapGenerator:
+- behavior: create
+  envs:
+  - envs/api-gateway-policies.properties
+  name: api-gateway-policies
+- behavior: create
+  envs:
+  - envs/endpoint-db-attachment.properties
+  name: endpoint-db-attachment
+- behavior: create
+  envs:
+  - envs/endpoint-db-cache.properties
+  name: endpoint-db-cache
+- behavior: create
+  envs:
+  - envs/endpoint-db-cs.properties
+  name: endpoint-db-cs
+- behavior: create
+  envs:
+  - envs/endpoint-db-drs.properties
+  name: endpoint-db-drs
+- behavior: create
+  envs:
+  - envs/endpoint-db-events.properties
+  name: endpoint-db-events
+- behavior: create
+  envs:
+  - envs/endpoint-db-ewih.properties
+  name: endpoint-db-ewih
+- behavior: create
+  envs:
+  - envs/endpoint-db-questionnaire-read.properties
+  name: endpoint-db-questionnaire-read
+- behavior: create
+  envs:
+  - envs/endpoint-db-questionnaire.properties
+  name: endpoint-db-questionnaire
+- behavior: create
+  envs:
+  - envs/endpoint-db-rcip.properties
+  name: endpoint-db-rcip
+- behavior: create
+  envs:
+  - envs/endpoint-db-wm.properties
+  name: endpoint-db-wm
+- behavior: create
+  envs:
+  - envs/endpoint-ip-ldap.properties
+  name: endpoint-ip-ldap
+- behavior: create
+  envs:
+  - envs/endpoint-is.properties
+  name: endpoint-is
+- behavior: create
+  envs:
+  - envs/endpoint-memcached.properties
+  name: endpoint-memcached
+- behavior: create
+  envs:
+  - envs/endpoint-um.properties
+  name: endpoint-um
+- behavior: create
+  files:
+  - files/DIPAutTestDynamicRoutingL2P.zip
+  name: DIPAutTestDynamicRoutingL2P
+- behavior: create
+  files:
+  - files/DIPAutTestDynamicRoutingScope.zip
+  name: DIPAutTestDynamicRoutingScope
+- behavior: create
+  files:
+  - files/DIPAutTestDynamicRoutingSimple.zip
+  name: DIPAutTestDynamicRoutingSimple
+- behavior: create
+  files:
+  - files/DIPAutTestNodeRouting.zip
+  name: DIPAutTestNodeRouting
+- behavior: create
+  files:
+  - files/api-gateway-applications-config.yaml
+  name: api-gateway-applications-config
+- behavior: create
+  files:
+  - values.yaml=values/api-gateway.yaml
+  name: api-gateway
+- behavior: create
+  files:
+  - values.yaml=values/db-configurator.yaml
+  name: db-configurator
+- behavior: create
+  files:
+  - values.yaml=values/db-initializer.yaml
+  name: db-initializer
+- behavior: create
+  files:
+  - values.yaml=values/ewih-service.yaml
+  name: ewih-service
+- behavior: create
+  files:
+  - values.yaml=values/globals.yaml
+  name: globals
+- behavior: create
+  files:
+  - values.yaml=values/integration-server.yaml
+  name: integration-server
+- behavior: create
+  files:
+  - values.yaml=values/kie-server.yaml
+  name: kie-server
+- behavior: create
+  files:
+  - values.yaml=values/kie-workbench.yaml
+  name: kie-workbench
+- behavior: create
+  files:
+  - values.yaml=values/ldap.yaml
+  name: ldap
+- behavior: create
+  files:
+  - values.yaml=values/memcached.yaml
+  name: memcached
+- behavior: create
+  files:
+  - values.yaml=values/my-webmethods-server.yaml
+  name: my-webmethods-server
+- behavior: create
+  files:
+  - values.yaml=values/process-service.yaml
+  name: process-service
+- behavior: create
+  files:
+  - values.yaml=values/universal-messaging-configurator.yaml
+  name: universal-messaging-configurator
+- behavior: create
+  files:
+  - values.yaml=values/universal-messaging.yaml
+  name: universal-messaging
