@@ -61,22 +61,22 @@ configMapGenerator:
   envs:
   - envs/endpoint-um.properties
   name: endpoint-um
-- behavior: create
-  files:
-  - files/DIPAutTestDynamicRoutingL2P.zip
-  name: DIPAutTestDynamicRoutingL2P
-- behavior: create
-  files:
-  - files/DIPAutTestDynamicRoutingScope.zip
-  name: DIPAutTestDynamicRoutingScope
-- behavior: create
-  files:
-  - files/DIPAutTestDynamicRoutingSimple.zip
-  name: DIPAutTestDynamicRoutingSimple
-- behavior: create
-  files:
-  - files/DIPAutTestNodeRouting.zip
-  name: DIPAutTestNodeRouting
+# - behavior: create
+#   files:
+#   - files/DIPAutTestDynamicRoutingL2P.zip
+#   name: DIPAutTestDynamicRoutingL2P
+# - behavior: create
+#   files:
+#   - files/DIPAutTestDynamicRoutingScope.zip
+#   name: DIPAutTestDynamicRoutingScope
+# - behavior: create
+#   files:
+#   - files/DIPAutTestDynamicRoutingSimple.zip
+#   name: DIPAutTestDynamicRoutingSimple
+# - behavior: create
+#   files:
+#   - files/DIPAutTestNodeRouting.zip
+#   name: DIPAutTestNodeRouting
 - behavior: create
   files:
   - files/api-gateway-applications-config.yaml
