@@ -1,7 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- helmrepo.yaml
 - release.yaml
 
 namespace: default
@@ -9,12 +8,12 @@ namespace: default
 configMapGenerator:
 - name: config-default
   files:
-  - values.yaml
+  - ../values/values.yaml
   options:
     disableNameSuffixHash: false
 - name: config-acc
   files:
-  - values.yaml=values-acc.yaml
+  - values.yaml=../values/values-acc.yaml
   options:
     disableNameSuffixHash: false
 

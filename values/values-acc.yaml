@@ -1,0 +1,22 @@
+db-configurator:
+  enabled: true
+  configMapEnvRefs:
+    - name: endpoint-db-wm
+  secretEnvRefs:
+    - name: credentials-db-wm
+    - name: credentials-db-attachment
+    
+foo: "bar-acc"
+global:
+    env: acc
+    imagePullSecrets:
+      - name: acc-regcred
+        imageRegistry: ccscicd.azurecr.io
+
+meta:
+  from: acc
+  entry: acc
+  env: acc
+  extra: 
+    from-1: acc-1
+    from-3: acc-2
