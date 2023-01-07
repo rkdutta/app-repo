@@ -16,6 +16,22 @@ spec:
         name: app-charts
   valuesFrom:
   - kind: ConfigMap
-    name: api-gateway
-  - kind: ConfigMap
-    name: api-gateway
+    name: globals
+  # - kind: ConfigMap
+  #   name: api-gateway
+  # - kind: ConfigMap
+  #   name: 
+  # - kind: ConfigMap
+  #   name: 
+  # - kind: ConfigMap
+  #   name: 
+  # - kind: ConfigMap
+  #   name: 
+  # - kind: ConfigMap
+  #   name: 
+  # - kind: ConfigMap
+  #   name: 
+  # - kind: ConfigMap
+  #   name: 
+  # - kind: ConfigMap
+  #   name: 
