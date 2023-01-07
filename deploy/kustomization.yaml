@@ -8,12 +8,12 @@ namespace: default
 configMapGenerator:
 - name: config-default
   files:
-  - ../values/values.yaml
+  - values/values.yaml
   options:
     disableNameSuffixHash: false
 - name: config-acc
   files:
-  - values.yaml=../values/values-acc.yaml
+  - values.yaml=values/values-acc.yaml
   options:
     disableNameSuffixHash: false
 
