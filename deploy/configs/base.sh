@@ -2,28 +2,36 @@
 
 # for base 
 
-basePath="$1"
-tenant="$2"
-environment="$3"
+runFor=$1 # base or tenant
+basePath="$2"
+tenant="$3"
+environment="$4"
+
+if [[ -z "$runFor" ]]; then
+ echo "missing input runFor [base or tenant]"
+ exit 1;
+fi
 
 if [[ -z "$basePath" ]]; then
- echo "missing input basepath"
+ echo "missing input basePath"
  exit 1;
 fi
 
-if [[ -z "$tenant" ]]; then
- echo "missing input tenant"
- exit 1;
-fi
 
-if [[ -z "$environment" ]]; then
- echo "missing input environment"
- exit 1;
+if [[ "$runFor" == "base" ]]; then 
+    cd $basePath
+    rm -f kustomization.yaml
+    kustomize init
+elif [[ "$runFor" == "tenant" && "$environment" != "" ]]; then 
+    cd $basePath
+    rm -f kustomization.yaml
+    kustomize init
+    kustomize edit add resource "../../../base"
+    kustomize edit set namespace $tenant-$environment
+else
+    echo "Unsupported -  $runFor / $basePath / $environment"
+    exit 1
 fi
-
-cd $basePath
-rm -f kustomization.yaml
-kustomize init 
 
 for dir in */ ; do
     echo "Processing in $dir"
