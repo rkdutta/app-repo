@@ -23,7 +23,7 @@ if [[ "$runFor" == "base" ]]; then
     rm -f kustomization.yaml
     kustomize init
 elif [[ "$runFor" == "tenant" && "$environment" != "" ]]; then 
-    cd $basePath
+    cd $basePath/$tenant/$environment
     rm -f kustomization.yaml
     kustomize init
     kustomize edit add resource "../../../base"
