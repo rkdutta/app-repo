@@ -91,12 +91,12 @@ configMapGenerator:
   name: endpoint-um
   options:
     disableNameSuffixHash: true
-# - behavior: create
-#   files:
-#   - files/DIPAutTestDynamicRoutingL2P.zip
-#   name: DIPAutTestDynamicRoutingL2P
-#   options:
-#     disableNameSuffixHash: true
+- behavior: create
+  files:
+  - files/DIPAutTestDynamicRoutingL2P.zip
+  name: DIPAutTestDynamicRoutingL2P
+  options:
+    disableNameSuffixHash: true
 # - behavior: create
 #   files:
 #   - files/DIPAutTestDynamicRoutingScope.zip
