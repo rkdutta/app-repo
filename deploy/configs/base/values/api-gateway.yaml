@@ -1,4 +1,5 @@
 api-gateway:
+  aaaa: true
   enabled: true
   nameOverride: apigw
   resources:
