@@ -3,7 +3,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
   name: ks-repositories
-  namespace: dev
+  namespace: flux-system
 spec:
   interval: 5m0s
   path: ./platform/repository
@@ -16,4 +16,4 @@ spec:
   targetNamespace: dev
   dependsOn:
   - name: ks-permissions
-    namespace: dev
+    namespace: flux-system
