@@ -1,4 +1,5 @@
 api-gateway:
+  bbbb: true
   envs:
   - name: JVM_MEM
     value: 4g
