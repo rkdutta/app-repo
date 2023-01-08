@@ -5,7 +5,7 @@ configurations:
   - kustomizeconfig.yaml
 
 resources:
-- ../../base
+- ../../../base
 
 namespace: dev
 
