@@ -6,7 +6,7 @@ configurations:
 
 resources:
 - ../../base
-- release.yaml
+#- release.yaml
 
 namespace: dev
 
