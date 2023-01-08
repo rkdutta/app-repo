@@ -108,84 +108,84 @@ configMapGenerator:
 - behavior: create
   files:
   - values.yaml=values/api-gateway.yaml
-  name: api-gateway-dev
+  name: api-gateway-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/db-configurator.yaml
-  name: db-configurator-dev
+  name: db-configurator-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/db-initializer.yaml
-  name: db-initializer-dev
+  name: db-initializer-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/ewih-service.yaml
-  name: ewih-service-dev
+  name: ewih-service-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/globals.yaml
-  name: globals-dev
+  name: globals-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/integration-server.yaml
-  name: integration-server-dev
+  name: integration-server-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/kie-server.yaml
-  name: kie-server-dev
+  name: kie-server-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/kie-workbench.yaml
-  name: kie-workbench-dev
+  name: kie-workbench-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/ldap.yaml
-  name: ldap-dev
+  name: ldap-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/memcached.yaml
-  name: memcached-dev
+  name: memcached-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/my-webmethods-server.yaml
-  name: my-webmethods-server-dev
+  name: my-webmethods-server-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/process-service.yaml
-  name: process-service-dev
+  name: process-service-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/universal-messaging-configurator.yaml
-  name: universal-messaging-configurator-dev
+  name: universal-messaging-configurator-dev-deploy
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/universal-messaging.yaml
-  name: universal-messaging-dev
+  name: universal-messaging-dev-deploy
   options:
     disableNameSuffixHash: false
