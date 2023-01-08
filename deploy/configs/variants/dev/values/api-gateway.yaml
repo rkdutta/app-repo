@@ -1,4 +1,4 @@
-# api-gateway:
+api-gateway:
 #   envs:
 #   - name: JVM_MEM
 #     value: 4g
