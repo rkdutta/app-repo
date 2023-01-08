@@ -101,10 +101,10 @@ configMapGenerator:
   name: api-gateway-applications-config
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/api-gateway.yaml
-  name: api-gateway
+  name: api-gateway-variant
   options:
     disableNameSuffixHash: true
 - behavior: merge

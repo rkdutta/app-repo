@@ -19,6 +19,8 @@ spec:
   #   name: globals
   - kind: ConfigMap
     name: api-gateway
+  - kind: ConfigMap
+    name: api-gateway-variant
   # - kind: ConfigMap
   #   name: db-configurator
   # - kind: ConfigMap
