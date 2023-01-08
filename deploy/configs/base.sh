@@ -6,8 +6,8 @@ echo "syntax: ./base.sh runFor[base or variant or tenant] basePath[base/ or tena
 
 runFor=$1 # base or tenant
 basePath="$2"
-environment="$3"
-updateStratey=$4
+updateStratey=$3
+environment="$4"
 tenant="$5"
 
 
