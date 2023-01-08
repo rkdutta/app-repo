@@ -3,7 +3,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
   name: ks-permissions
-  namespace: default
+  namespace: dev
 spec:
   interval: 5m0s
   path: ./platform/permission
@@ -12,7 +12,7 @@ spec:
     kind: GitRepository
     name: flux-system
     namespace: flux-system
-  targetNamespace: default
+  targetNamespace: dev
   dependsOn:
   - name: flux-system
     namespace: flux-system
