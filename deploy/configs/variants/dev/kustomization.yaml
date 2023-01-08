@@ -6,7 +6,6 @@ configurations:
 
 resources:
 - ../../base
-#- release.yaml
 
 namespace: dev
 
@@ -110,85 +109,85 @@ configMapGenerator:
 - behavior: create
   files:
   - values.yaml=values/api-gateway.yaml
-  name: api-gateway-dev
+  name: api-gateway-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/db-configurator.yaml
-  name: db-configurator-dev
+  name: db-configurator-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/db-initializer.yaml
-  name: db-initializer-dev
+  name: db-initializer-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/ewih-service.yaml
-  name: ewih-service-dev
+  name: ewih-service-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/globals.yaml
-  name: globals-dev
+  name: globals-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/integration-server.yaml
-  name: integration-server-dev
+  name: integration-server-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/kie-server.yaml
-  name: kie-server-dev
+  name: kie-server-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/kie-workbench.yaml
-  name: kie-workbench-dev
+  name: kie-workbench-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/ldap.yaml
-  name: ldap-dev
+  name: ldap-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/memcached.yaml
-  name: memcached-dev
+  name: memcached-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/my-webmethods-server.yaml
-  name: my-webmethods-server-dev
+  name: my-webmethods-server-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/process-service.yaml
-  name: process-service-dev
+  name: process-service-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/universal-messaging-configurator.yaml
-  name: universal-messaging-configurator-dev
+  name: universal-messaging-configurator-static-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/universal-messaging.yaml
-  name: universal-messaging-dev
+  name: universal-messaging-static-config
   options:
     disableNameSuffixHash: false
 

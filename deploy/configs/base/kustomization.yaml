@@ -101,84 +101,84 @@ configMapGenerator:
 - behavior: create
   files:
   - values.yaml=values/api-gateway.yaml
-  name: api-gateway
+  name: api-gateway-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/db-configurator.yaml
-  name: db-configurator
+  name: db-configurator-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/db-initializer.yaml
-  name: db-initializer
+  name: db-initializer-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/ewih-service.yaml
-  name: ewih-service
+  name: ewih-service-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/globals.yaml
-  name: globals
+  name: globals-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/integration-server.yaml
-  name: integration-server
+  name: integration-server-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/kie-server.yaml
-  name: kie-server
+  name: kie-server-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/kie-workbench.yaml
-  name: kie-workbench
+  name: kie-workbench-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/ldap.yaml
-  name: ldap
+  name: ldap-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/memcached.yaml
-  name: memcached
+  name: memcached-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/my-webmethods-server.yaml
-  name: my-webmethods-server
+  name: my-webmethods-server-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/process-service.yaml
-  name: process-service
+  name: process-service-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/universal-messaging-configurator.yaml
-  name: universal-messaging-configurator
+  name: universal-messaging-configurator-common-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/universal-messaging.yaml
-  name: universal-messaging
+  name: universal-messaging-common-config
   options:
     disableNameSuffixHash: false

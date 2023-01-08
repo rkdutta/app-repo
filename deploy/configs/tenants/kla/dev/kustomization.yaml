@@ -9,6 +9,9 @@ configurations:
 
 namespace: dev
 
+patchesStrategicMerge:
+- release-patch.yaml
+
 configMapGenerator:
 - behavior: merge
   envs:
@@ -109,84 +112,84 @@ configMapGenerator:
 - behavior: create
   files:
   - values.yaml=values/api-gateway.yaml
-  name: api-gateway-dev-deploy
+  name: api-gateway-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/db-configurator.yaml
-  name: db-configurator-dev-deploy
+  name: db-configurator-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/db-initializer.yaml
-  name: db-initializer-dev-deploy
+  name: db-initializer-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/ewih-service.yaml
-  name: ewih-service-dev-deploy
+  name: ewih-service-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/globals.yaml
-  name: globals-dev-deploy
+  name: globals-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/integration-server.yaml
-  name: integration-server-dev-deploy
+  name: integration-server-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/kie-server.yaml
-  name: kie-server-dev-deploy
+  name: kie-server-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/kie-workbench.yaml
-  name: kie-workbench-dev-deploy
+  name: kie-workbench-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/ldap.yaml
-  name: ldap-dev-deploy
+  name: ldap-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/memcached.yaml
-  name: memcached-dev-deploy
+  name: memcached-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/my-webmethods-server.yaml
-  name: my-webmethods-server-dev-deploy
+  name: my-webmethods-server-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/process-service.yaml
-  name: process-service-dev-deploy
+  name: process-service-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/universal-messaging-configurator.yaml
-  name: universal-messaging-configurator-dev-deploy
+  name: universal-messaging-configurator-promote-config
   options:
     disableNameSuffixHash: false
 - behavior: create
   files:
   - values.yaml=values/universal-messaging.yaml
-  name: universal-messaging-dev-deploy
+  name: universal-messaging-promote-config
   options:
     disableNameSuffixHash: false
