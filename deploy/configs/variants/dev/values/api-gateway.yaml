@@ -1,7 +1,7 @@
 api-gateway:
   envs:
   - name: JVM_MEM
-    value: 4g
+    value: 5g
   - name: ES_HOST
     value: localhost
   ingress:
