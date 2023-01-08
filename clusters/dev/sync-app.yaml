@@ -6,7 +6,7 @@ metadata:
   namespace: default
 spec:
   interval: 5m0s
-  path: ./deploy
+  path: ./deploy/configs/tenants/kla/acc
   prune: true
   serviceAccountName: flux-reconciler
   sourceRef:
