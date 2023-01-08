@@ -104,84 +104,84 @@ configMapGenerator:
 - behavior: create
   files:
   - values.yaml=values/api-gateway.yaml
-  name: api-gateway-variant
+  name: api-gateway-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/db-configurator.yaml
-  name: db-configurator
+  name: db-configurator-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/db-initializer.yaml
-  name: db-initializer
+  name: db-initializer-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/ewih-service.yaml
-  name: ewih-service
+  name: ewih-service-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/globals.yaml
-  name: globals
+  name: globals-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/integration-server.yaml
-  name: integration-server
+  name: integration-server-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/kie-server.yaml
-  name: kie-server
+  name: kie-server-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/kie-workbench.yaml
-  name: kie-workbench
+  name: kie-workbench-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/ldap.yaml
-  name: ldap
+  name: ldap-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/memcached.yaml
-  name: memcached
+  name: memcached-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/my-webmethods-server.yaml
-  name: my-webmethods-server
+  name: my-webmethods-server-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/process-service.yaml
-  name: process-service
+  name: process-service-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/universal-messaging-configurator.yaml
-  name: universal-messaging-configurator
+  name: universal-messaging-configurator-dev
   options:
     disableNameSuffixHash: true
-- behavior: merge
+- behavior: create
   files:
   - values.yaml=values/universal-messaging.yaml
-  name: universal-messaging
+  name: universal-messaging-dev
   options:
     disableNameSuffixHash: true

@@ -38,7 +38,7 @@ elif [[ "$runFor" == "tenant" && "$environment" != "" ]]; then
     rm -f kustomization.yaml
     kustomize init
     kustomize edit add resource "../../../variants/$environment"
-    kustomize edit set namespace $tenant-$environment
+    kustomize edit set namespace $environment
 else
     echo "Unsupported -  $runFor / $basePath / $environment"
     exit 1
