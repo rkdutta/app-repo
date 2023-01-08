@@ -3,11 +3,13 @@ kind: Kustomization
 
 configurations:
   - kustomizeconfig.yaml
-  
+
 resources:
 - ../../base
 - release.yaml
+
 namespace: dev
+
 configMapGenerator:
 - behavior: merge
   envs:
