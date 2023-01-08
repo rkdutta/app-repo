@@ -185,3 +185,6 @@ configMapGenerator:
   name: universal-messaging-dev
   options:
     disableNameSuffixHash: false
+
+configurations:
+  - kustomizeconfig.yaml
