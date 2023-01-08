@@ -1,5 +1,6 @@
 my-webmethods-server:
   enabled: true
+  envs: {}
   configMapEnvRefs:
     - name: endpoint-db-wm
     - name: endpoint-um

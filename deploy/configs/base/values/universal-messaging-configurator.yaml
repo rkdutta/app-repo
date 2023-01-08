@@ -3,3 +3,4 @@ universal-messaging-configurator:
   nameOverride: um-configurator
   configMapEnvRefs:
     - name: endpoint-um
+  envs: {}
