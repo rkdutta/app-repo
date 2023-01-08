@@ -20,6 +20,7 @@ api-gateway:
   - name: credentials-db-ewih
   - name: credentials-ip-ldap
   - name: credentials-is
+  envs: {}
   ingress:
     enabled: true
     annotations:
