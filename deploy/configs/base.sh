@@ -2,6 +2,8 @@
 
 # for base 
 
+echo "syntax: ./base.sh runFor[base or tenant] basePath[base/ or tenants/] tenant[kla] environment[acc or dev]"
+
 runFor=$1 # base or tenant
 basePath="$2"
 tenant="$3"
