@@ -1,4 +1,30 @@
 api-gateway:
+  enabled: true
+  nameOverride: apigw
+  resources:
+    requests:
+      memory: 12Gi
+  additionalApplications:
+    configMapRef: api-gateway-applications
+  applicationsConfig:
+    configMapRef: api-gateway-applications-config
+  enabledPolicies:
+    configMapRef: api-gateway-policies
+  additionalJWTCertificates:
+    secretMapRef: keystore-apigw
+  configMapEnvRefs:
+  - name: endpoint-db-ewih
+  - name: endpoint-is
+  - name: endpoint-ip-ldap
+  secretEnvRefs:
+  - name: credentials-db-ewih
+  - name: credentials-ip-ldap
+  - name: credentials-is
+  envs:
+  - name: JVM_MEM
+    value: 4g
+  - name: ES_HOST
+    value: localhost
   ingress:
     enabled: true
     annotations:
