@@ -15,31 +15,31 @@ spec:
         kind: HelmRepository
         name: app-charts
   valuesFrom:
-  - kind: ConfigMap
-    name: globals
+  # - kind: ConfigMap
+  #   name: globals
   - kind: ConfigMap
     name: api-gateway
-  - kind: ConfigMap
-    name: db-configurator
-  - kind: ConfigMap
-    name: db-initializer
-  - kind: ConfigMap
-    name: universal-messaging
-  - kind: ConfigMap
-    name: universal-messaging-configurator
-  - kind: ConfigMap
-    name: integration-server
-  - kind: ConfigMap
-    name: my-webmethods-server
-  - kind: ConfigMap
-    name: ewih-service
-  - kind: ConfigMap
-    name: process-service
-  - kind: ConfigMap
-    name: ldap
-  - kind: ConfigMap
-    name: memcached
-  - kind: ConfigMap
-    name: kie-server
-  - kind: ConfigMap
-    name: kie-workbench
+  # - kind: ConfigMap
+  #   name: db-configurator
+  # - kind: ConfigMap
+  #   name: db-initializer
+  # - kind: ConfigMap
+  #   name: universal-messaging
+  # - kind: ConfigMap
+  #   name: universal-messaging-configurator
+  # - kind: ConfigMap
+  #   name: integration-server
+  # - kind: ConfigMap
+  #   name: my-webmethods-server
+  # - kind: ConfigMap
+  #   name: ewih-service
+  # - kind: ConfigMap
+  #   name: process-service
+  # - kind: ConfigMap
+  #   name: ldap
+  # - kind: ConfigMap
+  #   name: memcached
+  # - kind: ConfigMap
+  #   name: kie-server
+  # - kind: ConfigMap
+  #   name: kie-workbench
