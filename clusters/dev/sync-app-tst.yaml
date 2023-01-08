@@ -2,19 +2,19 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
-  name: ks-repositories
-  namespace: tst
+  name: ks-app-dev
+  namespace: dev
 spec:
   interval: 5m0s
-  path: ./platform/repository
+  path: ./deploy/configs/tenants/kla/dev
   prune: true
   serviceAccountName: flux-reconciler
   sourceRef:
     kind: GitRepository
     name: flux-system
     namespace: flux-system
-  targetNamespace: tst
+  targetNamespace: dev
   suspend: false
   dependsOn:
-  - name: ks-permissions
-    namespace: tst
+  - name: ks-repositories
+    namespace: dev
