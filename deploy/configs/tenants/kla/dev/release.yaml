@@ -14,5 +14,4 @@ spec:
         kind: HelmRepository
         name: app-charts
   values:
-    api-gateway:
-      aaaaa: 2
+    release-trigger: release-trigger

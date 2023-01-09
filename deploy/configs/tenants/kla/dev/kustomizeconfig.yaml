@@ -9,3 +9,8 @@ nameReference:
   fieldSpecs:
   - path: spec/valuesFrom/name
     kind: HelmRelease
+- kind: ConfigMap
+  version: v1
+  fieldSpecs:
+  - path: spec/values/release-trigger
+    kind: HelmRelease

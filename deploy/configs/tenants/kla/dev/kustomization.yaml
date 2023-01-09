@@ -7,6 +7,14 @@ resources:
 configurations:
   - kustomizeconfig.yaml
 
+configMapGenerator:
+- behavior: create
+  literals:
+  - pass=111
+  name: release-trigger
+  options:
+    disableNameSuffixHash: false
+
 namespace: kla-dev
 
 patchesStrategicMerge:
