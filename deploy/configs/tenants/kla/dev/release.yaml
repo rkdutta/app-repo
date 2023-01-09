@@ -13,3 +13,5 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: app-charts
+  values:
+    replicaCount: 2
