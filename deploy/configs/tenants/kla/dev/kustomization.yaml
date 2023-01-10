@@ -8,7 +8,7 @@ configurations:
   - kustomizeconfig.yaml
 
 
-namespace: kla-dev
+namespace: app-kla-dev
 
 patchesStrategicMerge:
 - release-patch.yaml
